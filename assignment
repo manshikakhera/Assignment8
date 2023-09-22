@@ -1,0 +1,70 @@
+#include <stdio.h>
+
+int main() {
+    int rows, i, j;
+
+    printf("Enter the number of rows: ");
+    scanf("%d", &rows);
+
+    for (i = 1; i <= rows; i++) {
+        for (j = 1; j <= i; j++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+
+#include<stdio.h>
+int main(){
+    int n,m;
+    printf("Enter a number of coumns ");
+    scanf("%d",&n);
+    printf("Enter a number of rows  ");
+    scanf("%d",&m);
+    for(int i=1;i<=m;i++){// outer loop // rows
+        for ( int j= 1; j<= n; j++)// inner loop // columns
+        {
+            printf("%d",j);
+        }
+        printf("\n");// har line ko new line dene k liye 
+        
+    }
+    return 0 ;
+}
+// #include<stdio.h>
+// int main(){
+//     int n , i , m ,j ;
+//     printf("Enter number of rows:  ");
+//     scanf("%d",&n);
+//     printf("Enter number of columns:  ");
+//     scanf("%d",&m);
+//     for(i=1;i<=n;i++){
+//         for(j=1;j<=m;j++){
+//             printf("%d",j);
+//         }
+//         m--;
+//         printf("\n");
+//     }
+// return 0;
+// }
+#include<stdio.h>
+int main(){
+    int n,m;
+    printf("Enter a number of coumns ");
+    scanf("%d",&n);
+    printf("Enter a number of rows  ");
+    scanf("%d",&m);
+    for(int i=1;i<=m;i++){// outer loop // rows
+        for ( int j= 1; j<= n; j++)// inner loop // columns
+        {
+            printf("*");
+        }
+        n--;
+        printf("\n");// har line ko new line dene k liye 
+        
+    }
+    return 1 ;
+}
